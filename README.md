@@ -1,2 +1,2 @@
 # soluciones_practicas_ISPC
-Ejercicios del modelo Programación de TSCDIA
+Ejercicios del modulo Programación de TSCDIA
