@@ -1,0 +1,31 @@
+def determinar_beneficio_estudiante():
+  """
+  Función que determina si un estudiante tiene un beneficio especial.
+
+  Parámetros:
+    No recibe parámetros.
+
+  Retorno:
+    No retorna ningún valor.
+
+  Descripción:
+    La función solicita al usuario la edad y el promedio del estudiante, y luego verifica si cumple al menos una de las siguientes condiciones:
+      - Ser mayor de edad (18 años)
+      - Ser un estudiante de honor (promedio superior a 90)
+
+    Si el estudiante cumple al menos una de estas condiciones, se imprime un mensaje indicando que tiene un "beneficio especial"; de lo contrario, se imprime un mensaje indicando que no tiene beneficios por el momento.
+  """
+
+  edad = int(input("Ingrese la edad del estudiante: "))
+  promedio = float(input("Ingrese el promedio del estudiante: "))
+
+  es_mayor_de_edad = edad >= 18
+  es_estudiante_de_honor = promedio > 90
+  tiene_beneficio_especial = es_mayor_de_edad or es_estudiante_de_honor
+
+  if tiene_beneficio_especial:
+    print("El estudiante tiene un beneficio especial.")
+  else:
+    print("El estudiante no tiene beneficios por el momento.")
+
+determinar_beneficio_estudiante()
